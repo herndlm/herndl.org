@@ -1,0 +1,40 @@
+<ifModule mod_headers.c>
+    Header set Content-Security-Policy "default-src 'self'"
+    Header set Strict-Transport-Security "max-age=31536000; includeSubdomains; preload"
+    Header set Public-Key-Pins "pin-sha256=\"YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg=\"; pin-sha256=\"sRHdihwgkaib1P1gxX8HFszlD+7/gTfNvuAybgLPNis=\"; max-age=5184000; includeSubDomains"
+    Header set X-Frame-Options "sameorigin"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Permitted-Cross-Domain-Policies "none"
+    Header set Referrer-Policy "same-origin"
+    Header set Expect-CT "enforce, max-age=86400"
+    Header set Feature-Policy "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'none'; speaker 'none'; usb 'none'; vr 'none'"
+</ifModule>
+
+<ifModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/xml text/css text/plain
+    AddOutputFilterByType DEFLATE image/svg+xml application/xhtml+xml application/xml
+    AddOutputFilterByType DEFLATE application/rdf+xml application/rss+xml application/atom+xml
+    AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript application/json
+    AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-otf
+    AddOutputFilterByType DEFLATE font/truetype font/opentype
+</ifModule>
+
+<ifModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 year"
+</ifModule>
+
+<ifModule mod_headers.c>
+    <filesMatch "\.(ico|jpe?g|png|gif|swf)$">
+        Header set Cache-Control "public"
+    </filesMatch>
+    <filesMatch "\.(css)$">
+        Header set Cache-Control "public"
+    </filesMatch>
+    <filesMatch "\.(js)$">
+        Header set Cache-Control "public"
+    </filesMatch>
+</ifModule>
+
+FileETag None
