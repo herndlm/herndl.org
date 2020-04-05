@@ -1,5 +1,10 @@
 # Martin Herndl
-<img alt="profile image" src="profileimage_square_150.jpg" width="150" height="150" id="profileimage" />
+<img alt="profile image" srcset="
+        profileimage_square_150.jpg,
+        profileimage_square_150x2.jpg 2x,
+        profileimage_square_150x3.jpg 3x,
+        profileimage_square_150x4.jpg 4x
+    " src="profileimage_square_150x4.jpg" width="150" height="150" id="profileimage" />
 
 **Email**: [bot protected](mailto:gro.ldnreh@nitram)
 
