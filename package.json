@@ -1,0 +1,29 @@
+{
+  "description": "herndl.org",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "uglify-js": "^3.8.1",
+    "uglifycss": "0.0.29"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "babel assets/js/ -d tmp",
+    "minimize-js": "uglifyjs --compress --mangle -- tmp/*.js > dist/scripts.js",
+    "minimize-css": "uglifycss assets/css/*.css > dist/styles.css",
+    "build": "./compile.sh && npm run transpile && npm run minimize-js && npm run minimize-css && rm -rf tmp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monojp/herndl.org.git"
+  },
+  "author": "Martin Herndl <martin@herndl.org> (https://herndl.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monojp/herndl.org/issues"
+  },
+  "homepage": "https://github.com/monojp/herndl.org#readme",
+  "private": true
+}
