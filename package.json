@@ -5,15 +5,18 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
+    "html-minifier": "^4.0.0",
     "uglify-js": "^3.8.1",
     "uglifycss": "0.0.29"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "transpile": "babel assets/js/ -d tmp",
+    "compile-html": "./compile.sh",
+    "minimize-html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --minify-css true --minify-js true tmp/index.html > dist/index.html",
+    "transpile-js": "babel assets/js/ -d tmp",
     "minimize-js": "uglifyjs --compress --mangle -- tmp/*.js > dist/scripts.js",
     "minimize-css": "uglifycss assets/css/*.css > dist/styles.css",
-    "build": "./compile.sh && npm run transpile && npm run minimize-js && npm run minimize-css && rm -rf tmp"
+    "build": "npm run compile-html && npm run minimize-html && npm run transpile-js && npm run minimize-js && npm run minimize-css && rm -rf tmp"
   },
   "repository": {
     "type": "git",
