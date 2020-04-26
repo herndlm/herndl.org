@@ -2,6 +2,10 @@ body {
 	font-family: sans-serif;
 }
 
+a {
+	color: #2966B8;
+}
+
 #profileimage {
 	border-radius: 100%;
 }
