@@ -25,3 +25,6 @@
 
 ### Blocking ads / trackers via hosts file
 I'm collecting ad or tracker domains in a custom blacklist that can be used combined with other hosts blocking lists. The latest version is always at [hosts_blacklist.txt](https://raw.githubusercontent.com/monojp/hosts_merge/master/hosts_blacklist.txt). With [hosts_merge](https://github.com/monojp/hosts_merge) I regularly build a ready-to-use hosts file that should block most of the Internets annoyances. It can be found at [https://herndl.org/hosts.txt](https://herndl.org/hosts.txt).
+
+
+[![World4You Webhosting](w4y_button_1.jpg "World4You Webhosting")](https://www.world4you.com/?affid=9BB3EXJZGED)
