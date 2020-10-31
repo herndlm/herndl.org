@@ -2,11 +2,11 @@
   "description": "herndl.org",
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.12.1",
-    "html-minifier": "^4.0.0",
-    "uglify-js": "^3.11.4",
+    "@babel/cli": "^7.0",
+    "@babel/core": "^7.0",
+    "@babel/preset-env": "^7.0",
+    "html-minifier": "^4.0",
+    "uglify-js": "^3.0",
     "uglifycss": "0.0.29"
   },
   "scripts": {
