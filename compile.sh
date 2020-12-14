@@ -17,5 +17,3 @@ echo "${BODY}" >> "${OUTPUT_FILE}"
 cat "${DIR}/template_after.html" >> "${OUTPUT_FILE}"
 
 cp assets/images/* "${DIST_DIR}"
-find assets -maxdepth 1 -type f -exec cp -t "${DIST_DIR}" {} +
-
