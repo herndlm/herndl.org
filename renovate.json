@@ -5,8 +5,7 @@
     ":semanticPrefixChore"
   ],
   "lockFileMaintenance": {
-          "enabled": true,
-          "schedule": "at any time"
+          "enabled": true
   },
   "rangeStrategy": "update-lockfile"
 }
