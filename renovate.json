@@ -4,8 +4,5 @@
     ":semanticCommits",
     ":semanticPrefixChore"
   ],
-  "lockFileMaintenance": {
-          "enabled": true
-  },
   "rangeStrategy": "update-lockfile"
 }
