@@ -4,5 +4,7 @@
     ":semanticCommits",
     ":semanticPrefixChore"
   ],
-  "rangeStrategy": "update-lockfile"
+  "prCreation": "not-pending",
+  "rangeStrategy": "update-lockfile",
+  "stabilityDays": 3
 }
