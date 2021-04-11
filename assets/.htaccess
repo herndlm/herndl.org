@@ -8,7 +8,7 @@
     Header set X-Permitted-Cross-Domain-Policies "none"
     Header set Referrer-Policy "same-origin"
     Header set Expect-CT "enforce, max-age=86400"
-    Header set Feature-Policy "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'none'; speaker 'none'; usb 'none'; vr 'none'"
+    Header set Permissions-Policy "accelerometer=(), ambient-light-sensor=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), speaker=(), usb=(), vr 'none'"
 </ifModule>
 
 <ifModule mod_deflate.c>
