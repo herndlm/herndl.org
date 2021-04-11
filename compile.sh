@@ -17,3 +17,6 @@ echo "${BODY}" >> "${OUTPUT_FILE}"
 cat "${DIR}/template_after.html" >> "${OUTPUT_FILE}"
 
 cp assets/images/* "${DIST_DIR}"
+cp assets/.htaccess "${DIST_DIR}"
+cp assets/pubkey.asc "${DIST_DIR}"
+
