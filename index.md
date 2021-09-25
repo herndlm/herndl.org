@@ -12,8 +12,8 @@
 
 ## Social
 
-[**Mastodon**](https://mastodon.social/@monojp) |
-[**Twitter**](https://twitter.com/HerndlMartin)
+[**Mastodon**](https://phpc.social/@herndlm) |
+[**Twitter**](https://twitter.com/herndlm)
 
 ## PGP
 
