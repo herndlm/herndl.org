@@ -19,8 +19,6 @@
 
 **Public key**: [0xC2461649A6A08BB2](https://herndl.org/pubkey.asc)
 
-**Fingerprint**: 4623 A525 2D4E 7535 CE52  7189 C246 1649 A6A0 8BB2
-
 ## Other
 
 ### Blocking ads / trackers via hosts file
