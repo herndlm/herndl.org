@@ -12,7 +12,7 @@
 
 ## Social
 
-[**Mastodon**](https://phpc.social/@herndlm) |
+<a href="https://phpc.social/@herndlm" rel="me"><strong>Mastodon</strong></a> |
 [**Twitter**](https://twitter.com/herndlm)
 
 ## PGP
