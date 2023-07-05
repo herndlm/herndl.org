@@ -8,7 +8,7 @@
 
 **Email**: [bot protected](mailto:gro.ldnreh@nitram)
 
-**XMPP**: [bot protected](xmpp:ed.liamsid@pjonom)
+**GitHub**: [https://github.com/herndlm](https://github.com/herndlm)
 
 ## Social
 
